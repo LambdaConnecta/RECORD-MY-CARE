@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record My Care</title>
 </head>
 <body>
-    <h1>Record My Care</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+    <h1>Welcome to Record My Care</h1>
+    <div>
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="signUpName">Name:</label>
+            <input type="text" id="signUpName" required>
+            <label for="signUpEmail">Email:</label>
+            <input type="email" id="signUpEmail" required>
+            <label for="signUpPassword">Password:</label>
+            <input type="password" id="signUpPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
 </body>
 </html>
